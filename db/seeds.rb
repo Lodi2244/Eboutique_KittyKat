@@ -22,3 +22,7 @@ end
   Item.create!(title: "kitten#{i}", description: "So cute !", price: 5, image_url: cat_imgs[i])
 end
 p "Created 20 items."
+
+#User.all.destroy
+#p "Create Test User"
+#user = User.create(email: "RoxyFoxy2244@gmail.com")
