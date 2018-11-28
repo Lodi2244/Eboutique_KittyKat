@@ -101,6 +101,10 @@
         <div class="products-catagories-area clearfix">
             <div class="amado-pro-catagory clearfix">
 
+              <% @items.each do |cat| %>
+  <img src="<%= cat.image_url %>" alt="">
+<% end %>
+
                 <!-- Single Catagory -->
                 <div class="single-products-catagory clearfix">
                     <a href="shop.html">
