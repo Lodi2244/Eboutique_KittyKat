@@ -14,9 +14,11 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+
 //= require js/bootstrap.min
-//= require js/jquery/jquery-2.2.4.min
-//= require js/popper.min
-//= require js/plugins
-//= require js/active
-//= require js/classy-nav.min 
+//= require js/bootstrap-hover-dropdown.min
+//= require js/jquery-migrate-1.2.1.min
+//= require js/jquery-1.11.1.min
+//= require js/jquery.magnific-popup.min
+//= require js/owl.carousel.min
+//= require js/custom

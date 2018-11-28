@@ -1,301 +1,886 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-    <!-- Title  -->
-    <title>Amado - Furniture Ecommerce Template | Home</title>
+	<meta charset="utf-8">
+	<!--[if IE]>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+	<![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
 
-    <!-- Favicon  -->
-    <link rel="icon" href="images/img/core-img/favicon.ico">
+	<title>Jewerly Shoppe Stores - Bootstrap 3 Template</title>
 
-    <!-- Core Style CSS -->
-    <link rel="stylesheet" href="css/core-style.css">
-    <link rel="stylesheet" href="style.css">
+	<!-- Bootstrap Core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Google Web Fonts -->
+	<link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700" rel="stylesheet" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+	<!-- CSS Files -->
+	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/owl.carousel.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+
+	<!--[if lt IE 9]>
+		<script src="js/ie8-responsive-file-warning.js"></script>
+	<![endif]-->
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+	<!-- Fav and touch icons -->
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/fav-144.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/fav-114.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/fav-72.png">
+	<link rel="apple-touch-icon-precomposed" href="images/fav-57.png">
+	<link rel="shortcut icon" href="images/fav.png">
 
 </head>
-
 <body>
-    <!-- Search Wrapper Area Start -->
-    <div class="search-wrapper section-padding-100">
-        <div class="search-close">
-            <i class="fa fa-close" aria-hidden="true"></i>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="search-content">
-                        <form action="#" method="get">
-                            <input type="search" name="search" id="search" placeholder="Type your keyword...">
-                            <button type="submit"><img src="images/img/core-img/search.png" alt=""></button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Search Wrapper Area End -->
+<!-- Header Section Starts -->
+	<header id="header-area">
+	<!-- Header Top Starts -->
+		<div class="header-top">
+			<div class="container">
+			<!-- Header Links Starts -->
+				<div class="col-sm-8 col-xs-12">
+					<div class="header-links">
+						<ul class="nav navbar-nav pull-left">
+							<li>
+								<a href="index.html">
+									<i class="fa fa-home" title="Home"></i>
+									<span class="hidden-sm hidden-xs">
+										Home
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fa fa-heart" title="Wish List"></i>
+									<span class="hidden-sm hidden-xs">
+										Wish List(0)
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fa fa-user" title="My Account"></i>
+									<span class="hidden-sm hidden-xs">
+										My Account
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="cart.html">
+									<i class="fa fa-shopping-cart" title="Shopping Cart"></i>
+									<span class="hidden-sm hidden-xs">
+										Shopping Cart
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fa fa-crosshairs" title="Checkout"></i>
+									<span class="hidden-sm hidden-xs">
+										Checkout
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="register.html">
+									<i class="fa fa-unlock" title="Register"></i>
+									<span class="hidden-sm hidden-xs">
+										Register
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="login.html">
+									<i class="fa fa-lock" title="Login"></i>
+									<span class="hidden-sm hidden-xs">
+										Login
+									</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			<!-- Header Links Ends -->
+			<!-- Currency & Languages Starts -->
+				<div class="col-sm-4 col-xs-12">
+					<div class="pull-right">
+					<!-- Currency Starts -->
+						<div class="btn-group">
+							<button class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+								$
+								<i class="fa fa-caret-down"></i>
+							</button>
+							<ul class="pull-right dropdown-menu">
+								<li><a tabindex="-1" href="#">Pound </a></li>
+								<li><a tabindex="-1" href="#">US Dollar</a></li>
+								<li><a tabindex="-1" href="#">Euro</a></li>
+							</ul>
+						</div>
+					<!-- Currency Ends -->
+					<!-- Languages Starts -->
+						<div class="btn-group">
+							<button class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+								ENG
+								<i class="fa fa-caret-down"></i>
+							</button>
+							<ul class="pull-right dropdown-menu">
+								<li>
+									<a tabindex="-1" href="#">English</a>
+								</li>
+								<li>
+									<a tabindex="-1" href="#">French</a>
+								</li>
+							</ul>
+						</div>
+					<!-- Languages Ends -->
+					</div>
+				</div>
+			<!-- Currency & Languages Ends -->
+			</div>
+		</div>
+	<!-- Header Top Ends -->
+	<!-- Starts -->
+		<div class="container">
+		<!-- Main Header Starts -->
+			<div class="main-header">
+				<div class="row">
+				<!-- Search Starts -->
+					<div class="col-md-3">
+						<div id="search">
+							<div class="input-group">
+							  <input type="text" class="form-control input-lg" placeholder="Search">
+							  <span class="input-group-btn">
+								<button class="btn btn-lg" type="button">
+									<i class="fa fa-search"></i>
+								</button>
+							  </span>
+							</div>
+						</div>
+					</div>
+				<!-- Search Ends -->
+				<!-- Logo Starts -->
+					<div class="col-md-6">
+						<div id="logo">
+							<a href="index.html"><img src="images/logo.png" title="Fashion Shoppe" alt="Fashion Shoppe" class="img-responsive" /></a>
+						</div>
+					</div>
+				<!-- Logo Starts -->
+				<!-- Shopping Cart Starts -->
+					<div class="col-md-3">
+						<div id="cart" class="btn-group btn-block">
+							<button type="button" data-toggle="dropdown" class="btn btn-block btn-lg dropdown-toggle">
+								<i class="fa fa-shopping-cart"></i>
+								<span class="hidden-md">Cart:</span>
+								<span id="cart-total">2 item(s) - $340.00</span>
+								<i class="fa fa-caret-down"></i>
+							</button>
+							<ul class="dropdown-menu pull-right">
+								<li>
+									<table class="table hcart">
+										<tr>
+											<td class="text-center">
+												<a href="product.html">
+													<img src="images/product-images/hcart-thumb1.jpg" alt="image" title="image" class="img-thumbnail img-responsive" />
+												</a>
+											</td>
+											<td class="text-left">
+												<a href="product-full.html">
+													Seeds
+												</a>
+											</td>
+											<td class="text-right">x 1</td>
+											<td class="text-right">$120.68</td>
+											<td class="text-center">
+												<a href="#">
+													<i class="fa fa-times"></i>
+												</a>
+											</td>
+										</tr>
+										<tr>
+											<td class="text-center">
+												<a href="product.html">
+													<img src="images/product-images/hcart-thumb2.jpg" alt="image" title="image" class="img-thumbnail img-responsive" />
+												</a>
+											</td>
+											<td class="text-left">
+												<a href="product-full.html">
+													Organic
+												</a>
+											</td>
+											<td class="text-right">x 2</td>
+											<td class="text-right">$240.00</td>
+											<td class="text-center">
+												<a href="#">
+													<i class="fa fa-times"></i>
+												</a>
+											</td>
+										</tr>
+									</table>
+								</li>
+								<li>
+									<table class="table table-bordered total">
+										<tbody>
+											<tr>
+												<td class="text-right"><strong>Sub-Total</strong></td>
+												<td class="text-left">$1,101.00</td>
+											</tr>
+											<tr>
+												<td class="text-right"><strong>Eco Tax (-2.00)</strong></td>
+												<td class="text-left">$4.00</td>
+											</tr>
+											<tr>
+												<td class="text-right"><strong>VAT (17.5%)</strong></td>
+												<td class="text-left">$192.68</td>
+											</tr>
+											<tr>
+												<td class="text-right"><strong>Total</strong></td>
+												<td class="text-left">$1,297.68</td>
+											</tr>
+										</tbody>
+									</table>
+									<p class="text-right btn-block1">
+										<a href="cart.html">
+											View Cart
+										</a>
+										<a href="#">
+											Checkout
+										</a>
+									</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				<!-- Shopping Cart Ends -->
+				</div>
+			</div>
+		<!-- Main Header Ends -->
+		<!-- Main Menu Starts -->
+			<nav id="main-menu" class="navbar" role="navigation">
+			<!-- Nav Header Starts -->
+				<div class="navbar-header">
+					<button type="button" class="btn btn-navbar navbar-toggle" data-toggle="collapse" data-target=".navbar-cat-collapse">
+						<span class="sr-only">Toggle Navigation</span>
+						<i class="fa fa-bars"></i>
+					</button>
+				</div>
+			<!-- Nav Header Ends -->
+			<!-- Navbar Cat collapse Starts -->
+				<div class="collapse navbar-collapse navbar-cat-collapse">
+					<ul class="nav navbar-nav">
+						<li><a href="category-list.html">Bracelets</a></li>
+						<li class="dropdown">
+							<a href="category-list.html" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="10">
+								Rings
+							</a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a tabindex="-1" href="#">Wedding Rings</a></li>
+								<li><a tabindex="-1" href="#">Men Rings</a></li>
+								<li><a tabindex="-1" href="#">Diamond Rings</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="category-list.html" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="10">Earrings</a>
+							<div class="dropdown-menu">
+								<div class="dropdown-inner">
+									<ul class="list-unstyled">
+										<li class="dropdown-header">Sub Category</li>
+										<li><a tabindex="-1" href="#">item 1</a></li>
+										<li><a tabindex="-1" href="#">item 2</a></li>
+										<li><a tabindex="-1" href="#">item 3</a></li>
+									</ul>
+									<ul class="list-unstyled">
+										<li class="dropdown-header">Sub Category</li>
+										<li><a tabindex="-1" href="#">item 1</a></li>
+										<li><a tabindex="-1" href="#">item 2</a></li>
+										<li><a tabindex="-1" href="#">item 3</a></li>
+									</ul>
+									<ul class="list-unstyled">
+										<li class="dropdown-header">Sub Category</li>
+										<li><a tabindex="-1" href="#">item 1</a></li>
+										<li><a tabindex="-1" href="#">item 2</a></li>
+										<li><a tabindex="-1" href="#">item 3</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li><a href="category-list.html">Jewelry Boxes</a></li>
+						<li><a href="category-list.html">Jewlery Holders</a></li>
+						<li><a href="category-list.html">Necklaces</a></li>
+						<li><a href="category-list.html">Pearls</a></li>
+                        <li><a href="category-list.html">Beat Sets</a></li>
+                        <li class="dropdown">
+                            <a href="category-list.html" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="10">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a tabindex="-1" href="index.html">Home</a></li>
+                                <li><a tabindex="-1" href="about.html">About</a></li>
+                                <li><a tabindex="-1" href="category-list.html">Category List</a></li>
+                                <li><a tabindex="-1" href="category-grid.html">Category Grid</a></li>
+                                <li><a tabindex="-1" href="product.html">Product</a></li>
+                                <li><a tabindex="-1" href="product-full.html">Product Full Width</a></li>
+                                <li><a tabindex="-1" href="cart.html">Cart</a></li>
+                                <li><a tabindex="-1" href="login.html">Login</a></li>
+                                <li><a tabindex="-1" href="compare.html">Compare Products</a></li>
+                                <li><a tabindex="-1" href="typography.html">Typography</a></li>
+                                <li><a tabindex="-1" href="register.html">Register</a></li>
+                                <li><a tabindex="-1" href="contact.html">Contact</a></li>
+                                <li><a tabindex="-1" href="404.html">404</a></li>
+                            </ul>
+                        </li>
 
-    <!-- ##### Main Content Wrapper Start ##### -->
-    <div class="main-content-wrapper d-flex clearfix">
-
-        <!-- Mobile Nav (max width 767px)-->
-        <div class="mobile-nav">
-            <!-- Navbar Brand -->
-            <div class="amado-navbar-brand">
-                <a href="index.html"><img src="images/img/core-img/logo.png" alt=""></a>
-            </div>
-            <!-- Navbar Toggler -->
-            <div class="amado-navbar-toggler">
-                <span></span><span></span><span></span>
-            </div>
-        </div>
-
-        <!-- Header Area Start -->
-        <header class="header-area clearfix">
-            <!-- Close Icon -->
-            <div class="nav-close">
-                <i class="fa fa-close" aria-hidden="true"></i>
-            </div>
-            <!-- Logo -->
-            <div class="logo">
-                <a href="index.html"><img src="images/img/core-img/logo.png" alt=""></a>
-            </div>
-            <!-- Amado Nav -->
-            <nav class="amado-nav">
-                <ul>
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="shop.html">Shop</a></li>
-                    <li><a href="product-details.html">Product</a></li>
-                    <li><a href="cart.html">Cart</a></li>
-                    <li><a href="checkout.html">Checkout</a></li>
-                </ul>
-            </nav>
-            <!-- Button Group -->
-            <div class="amado-btn-group mt-30 mb-100">
-                <a href="#" class="btn amado-btn mb-15">%Discount%</a>
-                <a href="#" class="btn amado-btn active">New this week</a>
-            </div>
-            <!-- Cart Menu -->
-            <div class="cart-fav-search mb-100">
-                <a href="cart.html" class="cart-nav"><img src="images/img/core-img/cart.png" alt=""> Cart <span>(0)</span></a>
-                <a href="#" class="fav-nav"><img src="images/img/core-img/favorites.png" alt=""> Favourite</a>
-                <a href="#" class="search-nav"><img src="images/img/core-img/search.png" alt=""> Search</a>
-            </div>
-            <!-- Social Button -->
-            <div class="social-info d-flex justify-content-between">
-                <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            </div>
-        </header>
-        <!-- Header Area End -->
-
-        <!-- Product Catagories Area Start -->
-        <div class="products-catagories-area clearfix">
-            <div class="amado-pro-catagory clearfix">
-
-                <!-- Single Catagory -->
-                <div class="single-products-catagory clearfix">
-                    <a href="shop.html">
-                        <img src="images/img/bg-img/1.jpg" alt="">
-                        <!-- Hover Content -->
-                        <div class="hover-content">
-                            <div class="line"></div>
-                            <p>From $180</p>
-                            <h4>Modern Chair</h4>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Single Catagory -->
-                <div class="single-products-catagory clearfix">
-                    <a href="shop.html">
-                        <img src="images/img/bg-img/2.jpg" alt="">
-                        <!-- Hover Content -->
-                        <div class="hover-content">
-                            <div class="line"></div>
-                            <p>From $180</p>
-                            <h4>Minimalistic Plant Pot</h4>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Single Catagory -->
-                <div class="single-products-catagory clearfix">
-                    <a href="shop.html">
-                        <img src="images/img/bg-img/3.jpg" alt="">
-                        <!-- Hover Content -->
-                        <div class="hover-content">
-                            <div class="line"></div>
-                            <p>From $180</p>
-                            <h4>Modern Chair</h4>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Single Catagory -->
-                <div class="single-products-catagory clearfix">
-                    <a href="shop.html">
-                        <img src="images/img/bg-img/4.jpg" alt="">
-                        <!-- Hover Content -->
-                        <div class="hover-content">
-                            <div class="line"></div>
-                            <p>From $180</p>
-                            <h4>Night Stand</h4>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Single Catagory -->
-                <div class="single-products-catagory clearfix">
-                    <a href="shop.html">
-                        <img src="images/img/bg-img/5.jpg" alt="">
-                        <!-- Hover Content -->
-                        <div class="hover-content">
-                            <div class="line"></div>
-                            <p>From $18</p>
-                            <h4>Plant Pot</h4>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Single Catagory -->
-                <div class="single-products-catagory clearfix">
-                    <a href="shop.html">
-                        <img src="images/img/bg-img/6.jpg" alt="">
-                        <!-- Hover Content -->
-                        <div class="hover-content">
-                            <div class="line"></div>
-                            <p>From $320</p>
-                            <h4>Small Table</h4>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Single Catagory -->
-                <div class="single-products-catagory clearfix">
-                    <a href="shop.html">
-                        <img src="images/img/bg-img/7.jpg" alt="">
-                        <!-- Hover Content -->
-                        <div class="hover-content">
-                            <div class="line"></div>
-                            <p>From $318</p>
-                            <h4>Metallic Chair</h4>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Single Catagory -->
-                <div class="single-products-catagory clearfix">
-                    <a href="shop.html">
-                        <img src="images/img/bg-img/8.jpg" alt="">
-                        <!-- Hover Content -->
-                        <div class="hover-content">
-                            <div class="line"></div>
-                            <p>From $318</p>
-                            <h4>Modern Rocking Chair</h4>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Single Catagory -->
-                <div class="single-products-catagory clearfix">
-                    <a href="shop.html">
-                        <img src="images/img/bg-img/9.jpg" alt="">
-                        <!-- Hover Content -->
-                        <div class="hover-content">
-                            <div class="line"></div>
-                            <p>From $318</p>
-                            <h4>Home Deco</h4>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <!-- Product Catagories Area End -->
-    </div>
-    <!-- ##### Main Content Wrapper End ##### -->
-
-    <!-- ##### Newsletter Area Start ##### -->
-    <section class="newsletter-area section-padding-100-0">
-        <div class="container">
-            <div class="row align-items-center">
-                <!-- Newsletter Text -->
-                <div class="col-12 col-lg-6 col-xl-7">
-                    <div class="newsletter-text mb-100">
-                        <h2>Subscribe for a <span>25% Discount</span></h2>
-                        <p>Nulla ac convallis lorem, eget euismod nisl. Donec in libero sit amet mi vulputate consectetur. Donec auctor interdum purus, ac finibus massa bibendum nec.</p>
-                    </div>
-                </div>
-                <!-- Newsletter Form -->
-                <div class="col-12 col-lg-6 col-xl-5">
-                    <div class="newsletter-form mb-100">
-                        <form action="#" method="post">
-                            <input type="email" name="email" class="nl-email" placeholder="Your E-mail">
-                            <input type="submit" value="Subscribe">
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ##### Newsletter Area End ##### -->
-
-    <!-- ##### Footer Area Start ##### -->
-    <footer class="footer_area clearfix">
-        <div class="container">
-            <div class="row align-items-center">
-                <!-- Single Widget Area -->
-                <div class="col-12 col-lg-4">
-                    <div class="single_widget_area">
-                        <!-- Logo -->
-                        <div class="footer-logo mr-50">
-                            <a href="index.html"><img src="images/img/core-img/logo2.png" alt=""></a>
-                        </div>
-                        <!-- Copywrite Text -->
-                        <p class="copywrite"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-                    </div>
-                </div>
-                <!-- Single Widget Area -->
-                <div class="col-12 col-lg-8">
-                    <div class="single_widget_area">
-                        <!-- Footer Menu -->
-                        <div class="footer_menu">
-                            <nav class="navbar navbar-expand-lg justify-content-end">
-                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#footerNavContent" aria-controls="footerNavContent" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
-                                <div class="collapse navbar-collapse" id="footerNavContent">
-                                    <ul class="navbar-nav ml-auto">
-                                        <li class="nav-item active">
-                                            <a class="nav-link" href="index.html">Home</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="shop.html">Shop</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="product-details.html">Product</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="cart.html">Cart</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="checkout.html">Checkout</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- ##### Footer Area End ##### -->
+					</ul>
+				</div>
+			<!-- Navbar Cat collapse Ends -->
+			</nav>
+		<!-- Main Menu Ends -->
+		</div>
+	<!-- Ends -->
+	</header>
+<!-- Header Section Ends -->
+<!-- Main Container Starts -->
+	<div id="main-container-home" class="container">
+	<!-- Slider & Main Banner Starts -->
+		<div class="slider">
+			<div class="row">
+			<!-- Slider Section Starts -->
+				<div class="col-md-9 col-xs-12">
+					<div id="main-carousel" class="carousel slide" data-ride="carousel">
+						<!-- Wrapper For Slides Starts -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<img src="images/slider-imgs/slide1-img.png" alt="Slider" class="img-responsive">
+								</div>
+								<div class="item">
+									<img src="images/slider-imgs/slide2-img.png" alt="Slider" class="img-responsive">
+								</div>
+							</div>
+						<!-- Wrapper For Slides Ends -->
+						<!-- Controls Starts -->
+							<a class="left carousel-control" href="#main-carousel" role="button" data-slide="prev">
+								<span class="glyphicon glyphicon-chevron-left"></span>
+							</a>
+							<a class="right carousel-control" href="#main-carousel" role="button" data-slide="next">
+								<span class="glyphicon glyphicon-chevron-right"></span>
+							</a>
+						<!-- Controls Ends -->
+					</div>
+				</div>
+			<!-- Slider Section Ends -->
+			<!-- Main Banner Starts -->
+				<div class="col-md-3 col-xs-12">
+					<img src="images/banners/main-banner1.png" alt="banners" class="img-responsive">
+				</div>
+			<!-- Main Banner Ends -->
+			</div>
+		</div>
+	<!-- Slider & Main Banner Ends -->
+	<!-- Latest Products Starts -->
+		<section class="product-carousel">
+		<!-- Heading Starts -->
+			<h2 class="product-head">Latest Products</h2>
+		<!-- Heading Ends -->
+		<!-- Products Row Starts -->
+			<div class="row">
+				<div class="col-xs-12">
+				<!-- Product Carousel Starts -->
+					<div id="owl-product" class="owl-carousel">
+					<!-- Product #1 Starts -->
+						<div class="item">
+							<div class="product-col">
+								<div class="image">
+									<img src="images/product-images/1.JPG" alt="product" class="img-responsive" />
+								</div>
+								<div class="caption">
+									<h4><a href="product.html">Antique Jewellery</a></h4>
+									<div class="description">
+										We are so lucky living in such a wonderful time. Our almost unlimited ...
+									</div>
+									<div class="price">
+										<span class="price-new">$199.50</span>
+										<span class="price-old">$249.50</span>
+									</div>
+									<div class="cart-button button-group">
+										<button type="button" class="btn btn-cart">
+											Add to cart
+											<i class="fa fa-shopping-cart"></i>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					<!-- Product #1 Ends -->
+					<!-- Product #2 Starts -->
+						<div class="item">
+							<div class="product-col">
+								<div class="image">
+									<img src="images/product-images/2.JPG" alt="product" class="img-responsive" />
+								</div>
+								<div class="caption">
+									<h4><a href="product.html">Antique Jewellery</a></h4>
+									<div class="description">
+										We are so lucky living in such a wonderful time. Our almost unlimited ...
+									</div>
+									<div class="price">
+										<span class="price-new">$199.50</span>
+										<span class="price-old">$249.50</span>
+									</div>
+									<div class="cart-button button-group">
+										<button type="button" class="btn btn-cart">
+											Add to cart
+											<i class="fa fa-shopping-cart"></i>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					<!-- Product #2 Ends -->
+					<!-- Product #3 Starts -->
+						<div class="item">
+							<div class="product-col">
+								<div class="image">
+									<img src="images/product-images/3.JPG" alt="product" class="img-responsive" />
+								</div>
+								<div class="caption">
+									<h4><a href="product.html">Antique Jewellery</a></h4>
+									<div class="description">
+										We are so lucky living in such a wonderful time. Our almost unlimited ...
+									</div>
+									<div class="price">
+										<span class="price-new">$199.50</span>
+										<span class="price-old">$249.50</span>
+									</div>
+									<div class="cart-button button-group">
+										<button type="button" class="btn btn-cart">
+											Add to cart
+											<i class="fa fa-shopping-cart"></i>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					<!-- Product #3 Ends -->
+					<!-- Product #4 Starts -->
+						<div class="item">
+							<div class="product-col">
+								<div class="image">
+									<img src="images/product-images/4.JPG" alt="product" class="img-responsive" />
+								</div>
+								<div class="caption">
+									<h4><a href="product.html">Antique Jewellery</a></h4>
+									<div class="description">
+										We are so lucky living in such a wonderful time. Our almost unlimited ...
+									</div>
+									<div class="price">
+										<span class="price-new">$199.50</span>
+										<span class="price-old">$249.50</span>
+									</div>
+									<div class="cart-button button-group">
+										<button type="button" class="btn btn-cart">
+											Add to cart
+											<i class="fa fa-shopping-cart"></i>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					<!-- Product #4 Ends -->
+					<!-- Product #5 Starts -->
+						<div class="item">
+							<div class="product-col">
+								<div class="image">
+									<img src="images/product-images/5.JPG" alt="product" class="img-responsive" />
+								</div>
+								<div class="caption">
+									<h4><a href="product.html">Antique Jewellery</a></h4>
+									<div class="description">
+										We are so lucky living in such a wonderful time. Our almost unlimited ...
+									</div>
+									<div class="price">
+										<span class="price-new">$199.50</span>
+										<span class="price-old">$249.50</span>
+									</div>
+									<div class="cart-button button-group">
+										<button type="button" class="btn btn-cart">
+											Add to cart
+											<i class="fa fa-shopping-cart"></i>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					<!-- Product #5 Ends -->
+					<!-- Product #6 Starts -->
+						<div class="item">
+							<div class="product-col">
+								<div class="image">
+									<img src="images/product-images/6.JPG" alt="product" class="img-responsive" />
+								</div>
+								<div class="caption">
+									<h4><a href="product.html">Antique Jewellery</a></h4>
+									<div class="description">
+										We are so lucky living in such a wonderful time. Our almost unlimited ...
+									</div>
+									<div class="price">
+										<span class="price-new">$199.50</span>
+										<span class="price-old">$249.50</span>
+									</div>
+									<div class="cart-button button-group">
+										<button type="button" class="btn btn-cart">
+											Add to cart
+											<i class="fa fa-shopping-cart"></i>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					<!-- Product #6 Ends -->
+					<!-- Product #7 Starts -->
+						<div class="item">
+							<div class="product-col">
+								<div class="image">
+									<img src="images/product-images/7.JPG" alt="product" class="img-responsive" />
+								</div>
+								<div class="caption">
+									<h4><a href="product.html">Antique Jewellery</a></h4>
+									<div class="description">
+										We are so lucky living in such a wonderful time. Our almost unlimited ...
+									</div>
+									<div class="price">
+										<span class="price-new">$199.50</span>
+										<span class="price-old">$249.50</span>
+									</div>
+									<div class="cart-button button-group">
+										<button type="button" class="btn btn-cart">
+											Add to cart
+											<i class="fa fa-shopping-cart"></i>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					<!-- Product #7 Ends -->
+					<!-- Product #8 Starts -->
+						<div class="item">
+							<div class="product-col">
+								<div class="image">
+									<img src="images/product-images/8.JPG" alt="product" class="img-responsive" />
+								</div>
+								<div class="caption">
+									<h4><a href="product.html">Antique Jewellery</a></h4>
+									<div class="description">
+										We are so lucky living in such a wonderful time. Our almost unlimited ...
+									</div>
+									<div class="price">
+										<span class="price-new">$199.50</span>
+										<span class="price-old">$249.50</span>
+									</div>
+									<div class="cart-button button-group">
+										<button type="button" class="btn btn-cart">
+											Add to cart
+											<i class="fa fa-shopping-cart"></i>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					<!-- Product #8 Ends -->
+					</div>
+				<!-- Product Carousel Ends -->
+				</div>
+			</div>
+		<!-- Products Row Ends -->
+		</section>
+	<!-- Latest Products Ends -->
+	<!-- 3 Column Banners Starts -->
+		<div class="col3-banners">
+			<ul class="row list-unstyled">
+				<li class="col-sm-4">
+					<img src="images/banners/3col-banner1.png" alt="banners" class="img-responsive">
+				</li>
+				<li class="col-sm-4">
+					<img src="images/banners/3col-banner2.png" alt="banners" class="img-responsive">
+				</li>
+				<li class="col-sm-4">
+					<img src="images/banners/3col-banner3.png" alt="banners" class="img-responsive">
+				</li>
+			</ul>
+		</div>
+	<!-- 3 Column Banners Ends -->
+	<!-- Featured Products Starts -->
+		<section class="products-list">
+		<!-- Heading Starts -->
+			<h2 class="product-head">Featured Products</h2>
+		<!-- Heading Ends -->
+		<!-- Products Row Starts -->
+			<div class="row">
+			<!-- Product #1 Starts -->
+				<div class="col-md-3 col-sm-6">
+					<div class="product-col">
+						<div class="image">
+							<img src="images/product-images/9.JPG" alt="product" class="img-responsive" />
+						</div>
+						<div class="caption">
+							<h4><a href="product.html">Antique Jewellery</a></h4>
+							<div class="description">
+								We are so lucky living in such a wonderful time. Our almost unlimited ...
+							</div>
+							<div class="price">
+								<span class="price-new">$199.50</span>
+								<span class="price-old">$249.50</span>
+							</div>
+							<div class="cart-button button-group">
+								<button type="button" class="btn btn-cart">
+									<i class="fa fa-shopping-cart"></i>
+									Add to cart
+								</button>
+								<button type="button" title="Wishlist" class="btn btn-wishlist">
+									<i class="fa fa-heart"></i>
+								</button>
+								<button type="button" title="Compare" class="btn btn-compare">
+									<i class="fa fa-bar-chart-o"></i>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			<!-- Product #1 Ends -->
+			<!-- Product #2 Starts -->
+				<div class="col-md-3 col-sm-6">
+					<div class="product-col">
+						<div class="image">
+							<img src="images/product-images/10.JPG" alt="product" class="img-responsive" />
+						</div>
+						<div class="caption">
+							<h4><a href="product.html">Antique Jewellery</a></h4>
+							<div class="description">
+								We are so lucky living in such a wonderful time. Our almost unlimited ...
+							</div>
+							<div class="price">
+								<span class="price-new">$199.50</span>
+								<span class="price-old">$249.50</span>
+							</div>
+							<div class="cart-button button-group">
+								<button type="button" class="btn btn-cart">
+									<i class="fa fa-shopping-cart"></i>
+									Add to cart
+								</button>
+								<button type="button" title="Wishlist" class="btn btn-wishlist">
+									<i class="fa fa-heart"></i>
+								</button>
+								<button type="button" title="Compare" class="btn btn-compare">
+									<i class="fa fa-bar-chart-o"></i>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			<!-- Product #2 Ends -->
+			<!-- Product #3 Starts -->
+				<div class="col-md-3 col-sm-6">
+					<div class="product-col">
+						<div class="image">
+							<img src="images/product-images/11.JPG" alt="product" class="img-responsive" />
+						</div>
+						<div class="caption">
+							<h4><a href="product.html">Antique Jewellery</a></h4>
+							<div class="description">
+								We are so lucky living in such a wonderful time. Our almost unlimited ...
+							</div>
+							<div class="price">
+								<span class="price-new">$199.50</span>
+								<span class="price-old">$249.50</span>
+							</div>
+							<div class="cart-button button-group">
+								<button type="button" class="btn btn-cart">
+									<i class="fa fa-shopping-cart"></i>
+									Add to cart
+								</button>
+								<button type="button" title="Wishlist" class="btn btn-wishlist">
+									<i class="fa fa-heart"></i>
+								</button>
+								<button type="button" title="Compare" class="btn btn-compare">
+									<i class="fa fa-bar-chart-o"></i>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			<!-- Product #3 Ends -->
+			<!-- Product #4 Starts -->
+				<div class="col-md-3 col-sm-6">
+					<div class="product-col">
+						<div class="image">
+							<img src="images/product-images/12.JPG" alt="product" class="img-responsive" />
+						</div>
+						<div class="caption">
+							<h4><a href="product.html">Antique Jewellery</a></h4>
+							<div class="description">
+								We are so lucky living in such a wonderful time. Our almost unlimited ...
+							</div>
+							<div class="price">
+								<span class="price-new">$199.50</span>
+								<span class="price-old">$249.50</span>
+							</div>
+							<div class="cart-button button-group">
+								<button type="button" class="btn btn-cart">
+									<i class="fa fa-shopping-cart"></i>
+									Add to cart
+								</button>
+								<button type="button" title="Wishlist" class="btn btn-wishlist">
+									<i class="fa fa-heart"></i>
+								</button>
+								<button type="button" title="Compare" class="btn btn-compare">
+									<i class="fa fa-bar-chart-o"></i>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			<!-- Product #4 Ends -->
+			</div>
+		<!-- Products Row Ends -->
+		</section>
+	<!-- Featured Products Ends -->
+	<!-- 2 Column Banners Starts -->
+		<div class="col2-banners">
+			<ul class="row list-unstyled">
+				<li class="col-sm-4">
+					<img src="images/banners/2col-banner1.png" alt="banners" class="img-responsive">
+				</li>
+				<li class="col-sm-8">
+					<img src="images/banners/2col-banner2.png" alt="banners" class="img-responsive">
+				</li>
+			</ul>
+		</div>
+	<!-- 2 Column Banners Ends -->
+	</div>
+<!-- Main Container Ends -->
+<!-- Footer Section Starts -->
+	<footer id="footer-area" class="container">
+	<!-- Footer Links Starts -->
+		<div class="footer-links">
+		<!-- Container Starts -->
+			<div class="row">
+				<!-- Information Links Starts -->
+					<div class="col-md-2 col-sm-6">
+						<h5>Information</h5>
+						<ul>
+							<li><a href="about.html">About Us</a></li>
+							<li><a href="#">Delivery Information</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+							<li><a href="#">Terms &amp; Conditions</a></li>
+						</ul>
+					</div>
+				<!-- Information Links Ends -->
+				<!-- My Account Links Starts -->
+					<div class="col-md-2 col-sm-6">
+						<h5>My Account</h5>
+						<ul>
+							<li><a href="#">My Orders</a></li>
+							<li><a href="#">My Credit Slips</a></li>
+							<li><a href="#">My Addresses</a></li>
+							<li><a href="#">My Personal Info</a></li>
+						</ul>
+					</div>
+				<!-- My Account Links Ends -->
+				<!-- Customer Service Links Starts -->
+					<div class="col-md-2 col-sm-6">
+						<h5>Service</h5>
+						<ul>
+							<li><a href="contact.html">Contact Us</a></li>
+							<li><a href="#">Site Map</a></li>
+							<li><a href="#">Affiliates</a></li>
+							<li><a href="#">Specials</a></li>
+						</ul>
+					</div>
+				<!-- Customer Service Links Ends -->
+				<!-- Follow Us Links Starts -->
+					<div class="col-md-2 col-sm-6">
+						<h5>Follow Us</h5>
+						<ul>
+							<li><a href="#">Facebook</a></li>
+							<li><a href="#">Twitter</a></li>
+							<li><a href="#">RSS</a></li>
+							<li><a href="#">YouTube</a></li>
+						</ul>
+					</div>
+				<!-- Follow Us Links Ends -->
+				<!-- Contact Us Starts -->
+					<div class="col-md-4 col-sm-12 last">
+						<h5>Contact Us</h5>
+						<ul>
+							<li>My Company</li>
+							<li>
+								1247 LB Nagar Road, Hyderabad, Telangana - 35
+							</li>
+							<li>
+								Email: <a href="#">info@demolink.com</a>
+							</li>
+						</ul>
+						<h4 class="lead">
+							Tel: <span>1(234) 567-9842</span>
+						</h4>
+					</div>
+				<!-- Contact Us Ends -->
+			</div>
+		<!-- Container Ends -->
+		</div>
+	<!-- Footer Links Ends -->
+	<!-- Copyright Area Starts -->
+		<div class="copyright">
+		<!-- Container Starts -->
+			<div class="clearfix">
+			<!-- Starts -->
+				<p class="pull-left">
+					&nbsp; 2014 Jewerly Shoppe Stores. Bootstrap Designed By <a href="http://sainathchillapuram.com">Sainath Chillapuram</a>
+				</p>
+			<!-- Ends -->
+			<!-- Payment Gateway Links Starts -->
+				<ul class="pull-right list-inline">
+					<li>
+						<img src="images/payment-icon/cirrus.png" alt="PaymentGateway">
+					</li>
+					<li>
+						<img src="images/payment-icon/paypal.png" alt="PaymentGateway">
+					</li>
+					<li>
+						<img src="images/payment-icon/visa.png" alt="PaymentGateway">
+					</li>
+					<li>
+						<img src="images/payment-icon/mastercard.png" alt="PaymentGateway">
+					</li>
+					<li>
+						<img src="images/payment-icon/americanexpress.png" alt="PaymentGateway">
+					</li>
+				</ul>
+			<!-- Payment Gateway Links Ends -->
+			</div>
+		<!-- Container Ends -->
+		</div>
+	<!-- Copyright Area Ends -->
+	</footer>
+<!-- Footer Section Ends -->
+<!-- JavaScript Files -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-hover-dropdown.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>
