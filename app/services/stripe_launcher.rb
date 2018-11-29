@@ -1,1 +1,3 @@
 class StripeLauncher
+
+end
