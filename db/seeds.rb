@@ -12,16 +12,22 @@ require "open-uri"
 cat_imgs = Array.new
 n = 0
 
-doc = Nokogiri::HTML(open("http://www.cutestpaw.com/tag/cats/"))
+p "Start scrap"
+
+doc = Nokogiri::HTML(open("http://www.cutestpaw.com/tag/cats/page/4/"))
 doc.css("#photos > a > img").each do |link|
-  cat_imgs[n] = link.attr("src")
+  p cat_imgs[n] = link.attr("src")
   n += 1
 end
 
+p "Adding 20 links to database"
+
+
 20.times do |i|
-  Item.create!(title: "kitten#{i}", description: "So cute !", price: 5, image_url: cat_imgs[i])
+  Item.create!(title: "Kitten #{i}", description: "So cute ! Buy this picture now !", price: 199, image_url: cat_imgs[i])
 end
-p "Created 20 items."
+
+p "DONE !"
 
 #User.all.destroy
 #p "Create Test User"
