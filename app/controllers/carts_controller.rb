@@ -1,14 +1,19 @@
 class CartsController < ApplicationController
+  before_action :authenticate_user!
 
+  def create
+    @carts = Cart 
+  end
 
   def show
-  	@cart = Cart.find((User.find(current_user.id)).cart.id)
+  	@cart = current_user.cart
     @total_cart = 0
-	@item = Item.all
-	@item.each do |item|
-	  if(item.carts.ids == @cart.id)
-	    @total_cart += item.price
-	  end
-	end
+	  @item = Item.all
+	  @item.each do |item|
+
+	     if(item.carts.ids == @cart.id)
+	        @total_cart += item.price
+	       end
+	     end
   end
 end

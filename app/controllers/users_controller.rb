@@ -1,10 +1,17 @@
 class UsersController < ApplicationController
+
+  def show
+    @user = current_user
+  end
+
+  def new
+  end 
+
   def create
    @user = User.new(params[:user])
 
    respond_to do |format|
      if @user.save
-       # Tell the UserMailer to send a welcome email after save
        UserMailer.with(user: @user).welcome_email.deliver_now
 
        format.html { redirect_to(@user, notice: 'User was successfully created.') }

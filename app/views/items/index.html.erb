@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -55,7 +55,7 @@
 					<div class="header-links">
 						<ul class="nav navbar-nav pull-left">
 							<li>
-								<a href="index.html">
+								<a href="items/index">
 									<i class="fa fa-home" title="Home"></i>
 									<span class="hidden-sm hidden-xs">
 										Home
@@ -63,15 +63,7 @@
 								</a>
 							</li>
 							<li>
-								<a href="#">
-									<i class="fa fa-heart" title="Wish List"></i>
-									<span class="hidden-sm hidden-xs">
-										Wish List(0)
-									</span>
-								</a>
-							</li>
-							<li>
-								<a href="#">
+								<a href="users/show">
 									<i class="fa fa-user" title="My Account"></i>
 									<span class="hidden-sm hidden-xs">
 										My Account
@@ -79,7 +71,7 @@
 								</a>
 							</li>
 							<li>
-								<a href="cart.html">
+								<a href="cart/show">
 									<i class="fa fa-shopping-cart" title="Shopping Cart"></i>
 									<span class="hidden-sm hidden-xs">
 										Shopping Cart
@@ -87,15 +79,7 @@
 								</a>
 							</li>
 							<li>
-								<a href="#">
-									<i class="fa fa-crosshairs" title="Checkout"></i>
-									<span class="hidden-sm hidden-xs">
-										Checkout
-									</span>
-								</a>
-							</li>
-							<li>
-								<a href="register.html">
+								<a href="users/new">
 									<i class="fa fa-unlock" title="Register"></i>
 									<span class="hidden-sm hidden-xs">
 										Register
@@ -103,7 +87,7 @@
 								</a>
 							</li>
 							<li>
-								<a href="login.html">
+								<a href="users/create">
 									<i class="fa fa-lock" title="Login"></i>
 									<span class="hidden-sm hidden-xs">
 										Login
@@ -889,23 +873,3 @@
 <% @items.each do |cat| %>
 <img src="<%= cat.image_url %>" alt="">
 <% end %>
-
-
-<div class="payment-method">
-  <!-- Stripe -->
-  <div class="custom-control custom-checkbox mr-sm-2">
-    <form action="your-server-side-code" method="POST">
-      <script
-          src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-          data-key="<% Rails.application.credentials.stripe[:secret_key] %>"
-          data-amount="999"
-          data-name="Demo Site"
-          data-description="Example charge"
-          data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
-          data-locale="auto"
-          data-currency="eur">
-</script>
-    </form>
-  </div>
-  </div>
->>>>>>> Stripe
