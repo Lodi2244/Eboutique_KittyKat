@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -18,7 +19,6 @@
 	<!-- Google Web Fonts -->
 	<link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700" rel="stylesheet" type="text/css">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-
 	<!-- CSS Files -->
 	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
 	<link href="css/owl.carousel.css" rel="stylesheet">
@@ -55,7 +55,7 @@
 					<div class="header-links">
 						<ul class="nav navbar-nav pull-left">
 							<li>
-								<a href="index.html">
+								<a href="items/index">
 									<i class="fa fa-home" title="Home"></i>
 									<span class="hidden-sm hidden-xs">
 										Home
@@ -63,15 +63,7 @@
 								</a>
 							</li>
 							<li>
-								<a href="#">
-									<i class="fa fa-heart" title="Wish List"></i>
-									<span class="hidden-sm hidden-xs">
-										Wish List(0)
-									</span>
-								</a>
-							</li>
-							<li>
-								<a href="#">
+								<a href="users/show">
 									<i class="fa fa-user" title="My Account"></i>
 									<span class="hidden-sm hidden-xs">
 										My Account
@@ -79,7 +71,7 @@
 								</a>
 							</li>
 							<li>
-								<a href="cart.html">
+								<a href="/cart">
 									<i class="fa fa-shopping-cart" title="Shopping Cart"></i>
 									<span class="hidden-sm hidden-xs">
 										Shopping Cart
@@ -87,15 +79,7 @@
 								</a>
 							</li>
 							<li>
-								<a href="#">
-									<i class="fa fa-crosshairs" title="Checkout"></i>
-									<span class="hidden-sm hidden-xs">
-										Checkout
-									</span>
-								</a>
-							</li>
-							<li>
-								<a href="register.html">
+								<a href="users/new">
 									<i class="fa fa-unlock" title="Register"></i>
 									<span class="hidden-sm hidden-xs">
 										Register
@@ -103,7 +87,7 @@
 								</a>
 							</li>
 							<li>
-								<a href="login.html">
+								<a href="users/create">
 									<i class="fa fa-lock" title="Login"></i>
 									<span class="hidden-sm hidden-xs">
 										Login
@@ -627,8 +611,42 @@
 		<!-- Heading Ends -->
 		<!-- Products Row Starts -->
 			<div class="row">
+				<% @items[(10..13)].each do |cat| %>
+				<!-- Product #1 Starts -->
+					<div class="col-md-3 col-sm-6">
+						<div class="product-col">
+							<div class="image">
+								<img src="<%= cat.image_url %>" style="
+									height: 250px;
+									width: 250px;" alt="product" class="img-responsive" />
+							</div>
+							<div class="caption">
+								<h4><a href="product.html">Antique Jewellery</a></h4>
+								<div class="description">
+									We are so lucky living in such a wonderful time. Our almost unlimited ...
+								</div>
+								<div class="price">
+									<span class="price-new">$199.50</span>
+									<span class="price-old">$249.50</span>
+								</div>
+								<div class="cart-button button-group">
+									<button type="button" class="btn btn-cart">
+										<i class="fa fa-shopping-cart"></i>
+										Add to cart
+									</button>
+									<button type="button" title="Wishlist" class="btn btn-wishlist">
+										<i class="fa fa-heart"></i>
+									</button>
+									<button type="button" title="Compare" class="btn btn-compare">
+										<i class="fa fa-bar-chart-o"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				<% end %>
 			<!-- Product #1 Starts -->
-				<div class="col-md-3 col-sm-6">
+				<!--<div class="col-md-3 col-sm-6">
 					<div class="product-col">
 						<div class="image">
 							<img src="images/product-images/9.JPG" alt="product" class="img-responsive" />
@@ -656,10 +674,10 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div>-->
 			<!-- Product #1 Ends -->
 			<!-- Product #2 Starts -->
-				<div class="col-md-3 col-sm-6">
+				<!--<div class="col-md-3 col-sm-6">
 					<div class="product-col">
 						<div class="image">
 							<img src="images/product-images/10.JPG" alt="product" class="img-responsive" />
@@ -687,10 +705,10 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div>-->
 			<!-- Product #2 Ends -->
 			<!-- Product #3 Starts -->
-				<div class="col-md-3 col-sm-6">
+				<!--<div class="col-md-3 col-sm-6">
 					<div class="product-col">
 						<div class="image">
 							<img src="images/product-images/11.JPG" alt="product" class="img-responsive" />
@@ -718,10 +736,10 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div>-->
 			<!-- Product #3 Ends -->
 			<!-- Product #4 Starts -->
-				<div class="col-md-3 col-sm-6">
+				<!--<div class="col-md-3 col-sm-6">
 					<div class="product-col">
 						<div class="image">
 							<img src="images/product-images/12.JPG" alt="product" class="img-responsive" />
@@ -749,7 +767,7 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div>-->
 			<!-- Product #4 Ends -->
 			</div>
 		<!-- Products Row Ends -->

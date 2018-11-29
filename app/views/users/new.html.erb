@@ -1,5 +1,3 @@
-<%= @price %>
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -57,7 +55,7 @@
 					<div class="header-links">
 						<ul class="nav navbar-nav pull-left">
 							<li>
-								<a href="index.html">
+								<a href="items/index">
 									<i class="fa fa-home" title="Home"></i>
 									<span class="hidden-sm hidden-xs">
 										Home
@@ -65,7 +63,7 @@
 								</a>
 							</li>
 							<li>
-								<a href="#">
+								<a href="users/show">
 									<i class="fa fa-user" title="My Account"></i>
 									<span class="hidden-sm hidden-xs">
 										My Account
@@ -73,7 +71,7 @@
 								</a>
 							</li>
 							<li>
-								<a href="cart.html">
+								<a href="carts/show">
 									<i class="fa fa-shopping-cart" title="Shopping Cart"></i>
 									<span class="hidden-sm hidden-xs">
 										Shopping Cart
@@ -81,7 +79,7 @@
 								</a>
 							</li>
 							<li>
-								<a href="register.html">
+								<a href="users/new">
 									<i class="fa fa-unlock" title="Register"></i>
 									<span class="hidden-sm hidden-xs">
 										Register
@@ -89,7 +87,7 @@
 								</a>
 							</li>
 							<li>
-								<a href="login.html">
+								<a href="users/create">
 									<i class="fa fa-lock" title="Login"></i>
 									<span class="hidden-sm hidden-xs">
 										Login
@@ -273,175 +271,28 @@
 	<!-- Breadcrumb Starts -->
 		<ol class="breadcrumb">
 			<li><a href="index.html">Home</a></li>
-			<li class="active">Shopping Cart</li>
+			<li class="active">Register</li>
 		</ol>
 	<!-- Breadcrumb Ends -->
 	<!-- Main Heading Starts -->
 		<h2 class="main-heading text-center">
-			Shopping Cart
+			Register <br />
+			<span>Create New Account</span>
 		</h2>
 	<!-- Main Heading Ends -->
-	<!-- Shopping Cart Table Starts -->
-		<div class="table-responsive shopping-cart-table">
-			<table class="table table-bordered">
-				<thead>
-					<tr>
-						<td class="text-center">
-							Image
-						</td>
-						<td class="text-center">
-							Product Details
-						</td>
-						<td class="text-center">
-							Quantity
-						</td>
-						<td class="text-center">
-							Price
-						</td>
-						<td class="text-center">
-							Total
-						</td>
-						<td class="text-center">
-							Action
-						</td>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td class="text-center">
-							<a href="product.html">
-								<img src="images/product-images/cart-thumb-img1.jpg" alt="Product Name" title="Product Name" class="img-thumbnail" />
-							</a>
-						</td>
-						<td class="text-center">
-							<a href="product-full.html">Antique Jewellery</a>
-						</td>
-						<td class="text-center">
-							<div class="input-group btn-block">
-								<input type="text" name="quantity" value="1" size="1" class="form-control" />
-							</div>
-						</td>
-						<td class="text-center">
-							$150.00
-						</td>
-						<td class="text-center">
-							$150.00
-						</td>
-						<td class="text-center">
-							<button type="submit" title="Update" class="btn btn-default tool-tip">
-								<i class="fa fa-refresh"></i>
-							</button>
-							<button type="button" title="Remove" class="btn btn-default tool-tip">
-								<i class="fa fa-times-circle"></i>
-							</button>
-						</td>
-					</tr>
-					<tr>
-						<td class="text-center">
-							<a href="product.html">
-								<img src="images/product-images/cart-thumb-img2.jpg" alt="Product Name" title="Product Name" class="img-thumbnail" />
-							</a>
-						</td>
-						<td class="text-center">
-							<a href="product-full.html">Antique Jewellery</a>
-						</td>
-						<td class="text-center">
-							<div class="input-group btn-block">
-								<input type="text" name="quantity" value="1" size="1" class="form-control" />
-							</div>
-						</td>
-						<td class="text-center">
-							$150.00
-						</td>
-						<td class="text-center">
-							$150.00
-						</td>
-						<td class="text-center">
-							<button type="submit" title="Update" class="btn btn-default tool-tip">
-								<i class="fa fa-refresh"></i>
-							</button>
-							<button type="button" title="Remove" class="btn btn-default tool-tip">
-								<i class="fa fa-times-circle"></i>
-							</button>
-						</td>
-					</tr>
-				</tbody>
-				<tfoot>
-					<tr>
-					  <td colspan="4" class="text-right">
-						<strong>Total :</strong>
-					  </td>
-					  <td colspan="2" class="text-left">
-						$300
-					  </td>
-					</tr>
-				</tfoot>
-			</table>
-		</div>
-	<!-- Shopping Cart Table Ends -->
-	<!-- Shipping Section Starts -->
+	<!-- Registration Section Starts -->
 		<section class="registration-area">
 			<div class="row">
-			<!-- Shipping & Shipment Block Starts -->
 				<div class="col-sm-6">
-				<!-- Taxes Block Starts -->
+				<!-- Registration Block Starts -->
 					<div class="panel panel-smart">
 						<div class="panel-heading">
-							<h3 class="panel-title">
-								Shipping &amp; Taxes
-							</h3>
+							<h3 class="panel-title">Personal Information</h3>
 						</div>
 						<div class="panel-body">
-						<!-- Form Starts -->
+						<!-- Registration Form Starts -->
 							<form class="form-horizontal" role="form">
-								<div class="form-group">
-									<label for="inputCountry" class="col-sm-3 control-label">Country :</label>
-									<div class="col-sm-9">
-										<select class="form-control" id="inputCountry">
-											<option>- All Countries -</option>
-											<option>India</option>
-											<option>USA</option>
-											<option>UK</option>
-											<option>China</option>
-										</select>
-									</div>
-								</div>
-								<div class="form-group">
-									<label for="inputRegion" class="col-sm-3 control-label">Region :</label>
-									<div class="col-sm-9">
-										<select class="form-control" id="inputRegion">
-											<option>- All Regions -</option>
-										</select>
-									</div>
-								</div>
-								<div class="form-group">
-									<label for="inputZipCode" class="col-sm-3 control-label">Zip Code :</label>
-									<div class="col-sm-9">
-										<input type="text" class="form-control" id="inputZipCode" placeholder="Zip Code">
-									</div>
-								</div>
-								<div class="form-group">
-									<div class="col-sm-offset-3 col-sm-9">
-										<button type="submit" class="btn btn-default">
-											Get Info
-										</button>
-									</div>
-								</div>
-							</form>
-						<!-- Form Ends -->
-						</div>
-					</div>
-				<!-- Taxes Block Ends -->
-				<!-- Shipment Information Block Starts -->
-					<div class="panel panel-smart">
-						<div class="panel-heading">
-							<h3 class="panel-title">
-								Shipment Information
-							</h3>
-						</div>
-						<div class="panel-body">
-						<!-- Form Starts -->
-							<form class="form-horizontal" role="form">
+							<!-- Personal Information Starts -->
 								<div class="form-group">
 									<label for="inputFname" class="col-sm-3 control-label">First Name :</label>
 									<div class="col-sm-9">
@@ -464,6 +315,29 @@
 									<label for="inputPhone" class="col-sm-3 control-label">Phone :</label>
 									<div class="col-sm-9">
 										<input type="text" class="form-control" id="inputPhone" placeholder="Phone">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="inputFax" class="col-sm-3 control-label">Fax :</label>
+									<div class="col-sm-9">
+										<input type="text" class="form-control" id="inputFax" placeholder="Fax">
+									</div>
+								</div>
+							<!-- Personal Information Ends -->
+								<h3 class="panel-heading inner">
+									Delivery Information
+								</h3>
+							<!-- Delivery Information Starts -->
+								<div class="form-group">
+									<label for="inputCompany" class="col-sm-3 control-label">Company :</label>
+									<div class="col-sm-9">
+										<input type="text" class="form-control" id="inputCompany" placeholder="Company">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="inputCompanyId" class="col-sm-3 control-label">Company ID :</label>
+									<div class="col-sm-9">
+										<input type="text" class="form-control" id="inputCompanyId" placeholder="Company ID">
 									</div>
 								</div>
 								<div class="form-group">
@@ -493,7 +367,7 @@
 								<div class="form-group">
 									<label for="inputCountry" class="col-sm-3 control-label">Country :</label>
 									<div class="col-sm-9">
-										<select class="form-control" id="inputCountry1">
+										<select class="form-control" id="inputCountry">
 											<option>- All Countries -</option>
 											<option>India</option>
 											<option>USA</option>
@@ -505,118 +379,124 @@
 								<div class="form-group">
 									<label for="inputRegion" class="col-sm-3 control-label">Region :</label>
 									<div class="col-sm-9">
-										<select class="form-control" id="inputRegion1">
+										<select class="form-control" id="inputRegion">
 											<option>- All Regions -</option>
 										</select>
+									</div>
+								</div>
+							<!-- Delivery Information Ends -->
+								<h3 class="panel-heading inner">
+									Password
+								</h3>
+							<!-- Password Area Starts -->
+								<div class="form-group">
+									<label for="inputPassword" class="col-sm-3 control-label">Password :</label>
+									<div class="col-sm-9">
+										<input type="password" class="form-control" id="inputPassword" placeholder="Password">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="inputRePassword" class="col-sm-3 control-label">Re-Password :</label>
+									<div class="col-sm-9">
+										<input type="password" class="form-control" id="inputRePassword" placeholder="Re-Password">
+									</div>
+								</div>
+								<div class="form-group">
+									<span class="col-sm-3 control-label">Newsletter :</span>
+									<div class="col-sm-9">
+										<div class="radio">
+											<label>
+												<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+												Subscribe
+											</label>
+										</div>
+										<div class="radio">
+											<label>
+												<input type="radio" name="optionsRadios" id="optionsRadios2" value="option1">
+												Unsubscribe
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-sm-offset-3 col-sm-9">
+										<div class="checkbox">
+											<label>
+												<input type="checkbox"> I'v read and agreed on Conditions
+											</label>
+										</div>
 									</div>
 								</div>
 								<div class="form-group">
 									<div class="col-sm-offset-3 col-sm-9">
 										<button type="submit" class="btn btn-main">
-											Submit
+											Register
 										</button>
 									</div>
 								</div>
+							<!-- Password Area Ends -->
 							</form>
-						<!-- Form Ends -->
+						<!-- Registration Form Starts -->
 						</div>
 					</div>
-				<!-- Shipment Information Block Ends -->
+				<!-- Registration Block Ends -->
 				</div>
-			<!-- Shipping & Shipment Block Ends -->
-			<!-- Discount & Conditions Blocks Starts -->
 				<div class="col-sm-6">
-				<!-- Discount Coupon Block Starts -->
+				<!-- Guest Checkout Panel Starts -->
 					<div class="panel panel-smart">
 						<div class="panel-heading">
 							<h3 class="panel-title">
-								Discount Coupon Code
+								Checkout as Guest
 							</h3>
 						</div>
 						<div class="panel-body">
-						<!-- Form Starts -->
-							<form class="form-horizontal" role="form">
-								<div class="form-group">
-									<label for="inputCouponCode" class="col-sm-3 control-label">Coupon Code :</label>
-									<div class="col-sm-9">
-										<input type="text" class="form-control" id="inputCouponCode" placeholder="Coupon Code">
-									</div>
-								</div>
-								<div class="form-group">
-									<div class="col-sm-offset-3 col-sm-9">
-										<button type="submit" class="btn btn-default">
-											Apply Coupon
-										</button>
-									</div>
-								</div>
-							</form>
-						<!-- Form Ends -->
+							<p>
+								Checkout as a guest instead!
+							</p>
+							<button class="btn btn-main">As Guest</button>
 						</div>
 					</div>
-				<!-- Discount Coupon Block Ends -->
+				<!-- Guest Checkout Panel Ends -->
 				<!-- Conditions Panel Starts -->
 					<div class="panel panel-smart">
 						<div class="panel-heading">
 							<h3 class="panel-title">
-								Terms &amp; Conditions
+								Conditions
 							</h3>
 						</div>
 						<div class="panel-body">
 							<p>
-								HTML Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula.
+								Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including  versions of Lorem Ipsum.
+							</p>
+							<ol>
+							  <li>Lorem ipsum dolor sit amet</li>
+							  <li>Consectetur adipiscing elit</li>
+							  <li>Integer molestie lorem at massa</li>
+							  <li>Facilisis in pretium nisl aliquet</li>
+							  <li>Nulla volutpat aliquam velit</li>
+							  <li>Faucibus porta lacus fringilla vel</li>
+							  <li>Aenean sit amet erat nunc</li>
+							  <li>Eget porttitor lorem</li>
+							</ol>
+							<p>
+								HTML Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris.
 							</p>
 							<p>
-								Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien risus a quam. Maecenas fermentum consequat mi. Donec fermentum. Pellentesque malesuada nulla a mi.
+								Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien risus a quam. Maecenas fermentum consequat mi. Donec fermentum. Pellentesque malesuada nulla a mi. Duis sapien sem, aliquet nec, commodo eget, consequat quis, neque.
 							</p>
 							<p>
-								Duis sapien sem, aliquet nec, commodo eget, consequat quis, neque. Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien, sed malesuada diam lacus eget erat. Cras mollis scelerisque nunc. Nullam arcu. Aliquam consequat.
+								Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien, sed malesuada diam lacus eget erat. Cras mollis scelerisque nunc. Nullam arcu. Aliquam consequat. Curabitur augue lorem, dapibus quis, laoreet et, pretium ac, nisi.
+							</p>
+							<p>
+								Aenean magna nisl, mollis quis, molestie eu, feugiat in, orci. In hac habitasse platea dictumst.
 							</p>
 						</div>
 					</div>
 				<!-- Conditions Panel Ends -->
-				<!-- Total Panel Starts -->
-					<div class="panel panel-smart">
-						<div class="panel-heading">
-							<h3 class="panel-title">
-								Total
-							</h3>
-						</div>
-						<div class="panel-body">
-							<dl class="dl-horizontal">
-								<dt>Coupon Discount :</dt>
-								<dd>$-25.00</dd>
-								<dt>Subtotal :</dt>
-								<dd>$300.00</dd>
-								<dt>Payment Fee :</dt>
-								<dd>$10.00</dd>
-								<dt>Shipment Fee :</dt>
-								<dd>$15.00</dd>
-								<dt>Tax Total :</dt>
-								<dd>$315.00</dd>
-							</dl>
-							<hr />
-							<dl class="dl-horizontal total">
-								<dt>Total :</dt>
-								<dd>$325.00</dd>
-							</dl>
-							<hr />
-							<div class="text-uppercase clearfix">
-								<a href="#" class="btn btn-default pull-left">
-									<span class="hidden-xs">Continue Shopping</span>
-									<span class="visible-xs">Continue</span>
-								</a>
-								<a href="#" class="btn btn-main pull-right">
-									Checkout
-								</a>
-							</div>
-						</div>
-					</div>
-				<!-- Total Panel Ends -->
 				</div>
-			<!-- Discount & Conditions Blocks Ends -->
 			</div>
 		</section>
-	<!-- Shipping Section Ends -->
+	<!-- Registration Section Ends -->
 	</div>
 <!-- Main Container Ends -->
 <!-- Footer Section Starts -->
