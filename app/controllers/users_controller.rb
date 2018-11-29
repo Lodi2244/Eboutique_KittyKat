@@ -22,10 +22,10 @@ class UsersController < ApplicationController
      end
    end
   end
-
+  
   def log_out
   	@user = session[:user_id] = nil
-	flash[:info] = "Vous etes deconnecté"
-	redirect_to item
+	redirect_to _url
   end
+
 end

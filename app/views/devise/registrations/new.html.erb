@@ -286,23 +286,6 @@
   <%= form_for(resource, as: resource_name,class: "btn btn-form-inline", url: registration_path(resource_name)) do |f| %>
     <%= devise_error_messages! %>
 
-      <%= f.label :email, class: "sr-only" %><br />
-      <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "btn btn-form-group", placeholder: "Example@email.com" %>
-
-      <%= f.label :password, class: "sr-only" %>
-      <% if @minimum_password_length %>
-      <em>(<%= @minimum_password_length %> characters minimum)</em>
-      <% end %><br />
-      <%= f.password_field :password, autocomplete: "new-password", class: "btn btn-form-group", placeholder: "Password" %>
-
-      <%= f.label :password_confirmation, class: "sr-only" %><br />
-      <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "btn btn-form-group", placeholder: "Confirm Password" %>
-
-    <div class="actions">
-      <%= f.submit "Sign up", class: "btn btn-main" %>
-    </div>
-  <% end %>
-
   <%= render "devise/shared/links" %>
 
 		<section class="registration-area">
@@ -318,137 +301,21 @@
 							<form class="form-horizontal" role="form">
 							<!-- Personal Information Starts -->
 								<div class="form-group">
-									<label for="inputFname" class="col-sm-3 control-label">First Name :</label>
 									<div class="col-sm-9">
-										<input type="text" class="form-control" id="inputFname" placeholder="First Name">
+									  <%= f.label :email, class: "col-sm-3 control-label"%>
+								      <%= f.text_field :email, placeholder: "please enter your email", class: "form-control" %>
 									</div>
 								</div>
 								<div class="form-group">
-									<label for="inputLname" class="col-sm-3 control-label">Last Name :</label>
 									<div class="col-sm-9">
-										<input type="text" class="form-control" id="inputLname" placeholder="Last Name">
+									  <%= f.label :Password, class: "col-sm-3 control-label"%>
+								      <%= f.password_field :email, placeholder: "please enter your Password", class: "form-control" %>
 									</div>
 								</div>
 								<div class="form-group">
-									<label for="inputEmail" class="col-sm-3 control-label">Email :</label>
 									<div class="col-sm-9">
-										<input type="email" class="form-control" id="inputEmail" placeholder="Email">
-									</div>
-								</div>
-								<div class="form-group">
-									<label for="inputPhone" class="col-sm-3 control-label">Phone :</label>
-									<div class="col-sm-9">
-										<input type="text" class="form-control" id="inputPhone" placeholder="Phone">
-									</div>
-								</div>
-								<div class="form-group">
-									<label for="inputFax" class="col-sm-3 control-label">Fax :</label>
-									<div class="col-sm-9">
-										<input type="text" class="form-control" id="inputFax" placeholder="Fax">
-									</div>
-								</div>
-							<!-- Personal Information Ends -->
-								<h3 class="panel-heading inner">
-									Delivery Information
-								</h3>
-							<!-- Delivery Information Starts -->
-								<div class="form-group">
-									<label for="inputCompany" class="col-sm-3 control-label">Company :</label>
-									<div class="col-sm-9">
-										<input type="text" class="form-control" id="inputCompany" placeholder="Company">
-									</div>
-								</div>
-								<div class="form-group">
-									<label for="inputCompanyId" class="col-sm-3 control-label">Company ID :</label>
-									<div class="col-sm-9">
-										<input type="text" class="form-control" id="inputCompanyId" placeholder="Company ID">
-									</div>
-								</div>
-								<div class="form-group">
-									<label for="inputAddress1" class="col-sm-3 control-label">Address/1 :</label>
-									<div class="col-sm-9">
-										<input type="text" class="form-control" id="inputAddress1" placeholder="Address/1">
-									</div>
-								</div>
-								<div class="form-group">
-									<label for="inputAddress2" class="col-sm-3 control-label">Address/2 :</label>
-									<div class="col-sm-9">
-										<input type="text" class="form-control" id="inputAddress2" placeholder="Address/2">
-									</div>
-								</div>
-								<div class="form-group">
-									<label for="inputCity" class="col-sm-3 control-label">City :</label>
-									<div class="col-sm-9">
-										<input type="text" class="form-control" id="inputCity" placeholder="City">
-									</div>
-								</div>
-								<div class="form-group">
-									<label for="inputPostCode" class="col-sm-3 control-label">Postal Code :</label>
-									<div class="col-sm-9">
-										<input type="text" class="form-control" id="inputPostCode" placeholder="Postal Code">
-									</div>
-								</div>
-								<div class="form-group">
-									<label for="inputCountry" class="col-sm-3 control-label">Country :</label>
-									<div class="col-sm-9">
-										<select class="form-control" id="inputCountry">
-											<option>- All Countries -</option>
-											<option>India</option>
-											<option>USA</option>
-											<option>UK</option>
-											<option>China</option>
-										</select>
-									</div>
-								</div>
-								<div class="form-group">
-									<label for="inputRegion" class="col-sm-3 control-label">Region :</label>
-									<div class="col-sm-9">
-										<select class="form-control" id="inputRegion">
-											<option>- All Regions -</option>
-										</select>
-									</div>
-								</div>
-							<!-- Delivery Information Ends -->
-								<h3 class="panel-heading inner">
-									Password
-								</h3>
-							<!-- Password Area Starts -->
-								<div class="form-group">
-									<label for="inputPassword" class="col-sm-3 control-label">Password :</label>
-									<div class="col-sm-9">
-										<input type="password" class="form-control" id="inputPassword" placeholder="Password">
-									</div>
-								</div>
-								<div class="form-group">
-									<label for="inputRePassword" class="col-sm-3 control-label">Re-Password :</label>
-									<div class="col-sm-9">
-										<input type="password" class="form-control" id="inputRePassword" placeholder="Re-Password">
-									</div>
-								</div>
-								<div class="form-group">
-									<span class="col-sm-3 control-label">Newsletter :</span>
-									<div class="col-sm-9">
-										<div class="radio">
-											<label>
-												<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-												Subscribe
-											</label>
-										</div>
-										<div class="radio">
-											<label>
-												<input type="radio" name="optionsRadios" id="optionsRadios2" value="option1">
-												Unsubscribe
-											</label>
-										</div>
-									</div>
-								</div>
-								<div class="form-group">
-									<div class="col-sm-offset-3 col-sm-9">
-										<div class="checkbox">
-											<label>
-												<input type="checkbox"> I'v read and agreed on Conditions
-											</label>
-										</div>
+									  <%= f.label "Password confiramtion", class: "col-sm-3 control-label"%>
+								      <%= f.password_field :password_confiramtion, placeholder: "please confirm your Password", class: "form-control" %>
 									</div>
 								</div>
 								<div class="form-group">
@@ -461,6 +328,7 @@
 							<!-- Password Area Ends -->
 							</form>
 						<!-- Registration Form Starts -->
+						<%end%>
 						</div>
 					</div>
 				<!-- Registration Block Ends -->

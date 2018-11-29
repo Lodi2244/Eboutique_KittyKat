@@ -5,4 +5,6 @@ Rails.application.routes.draw do
   get 'add_to_cart', to: 'items#add_to_cart'
   devise_for :users
   root to: 'items#index'
+  post '/log_out', to: 'users#log_out'
+  
 end
