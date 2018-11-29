@@ -8,7 +8,6 @@ class User < ApplicationRecord
 end
 
 
-
   def send_welcome_mail
     UserMailer.send_welcome_mail(email: email)
   end
