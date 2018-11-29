@@ -8,5 +8,6 @@ Rails.application.routes.draw do
   root to: 'items#index'
   root "items#index"
   get '/show', to: 'carts#show'
-  post '/', to: 'items#add_to_cart'
+  get '/items/', to: 'items#index', as: '/'
+  post '/:id', to: "items#add_to_cart"
 end

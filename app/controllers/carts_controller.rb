@@ -3,7 +3,7 @@ class CartsController < ApplicationController
 
   def new
     if(current_user != nil)
-  	   @cart = Cart.find((User.find(current_user.id)).cart.id)
+  	   @cart = current_user.cart
 	elsif(current_user)
 	  @cart = Cart.new(user_id: current_user.id)
 	  if(@cart.save)

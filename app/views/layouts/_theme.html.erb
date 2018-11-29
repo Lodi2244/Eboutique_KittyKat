@@ -398,8 +398,10 @@
 										<span class="price-old">$249.50</span>
 									</div>
 									<div class="cart-button button-group">
-											  <i class="fa fa-shopping-cart"></i>
-										  </button>
+										<button type="button" class="btn btn-cart">
+											Add to cart
+											<i class="fa fa-shopping-cart"></i>
+										</button>
 									</div>
 								</div>
 							</div>
@@ -609,41 +611,8 @@
 		<!-- Heading Ends -->
 		<!-- Products Row Starts -->
 			<div class="row">
-				<%= form_with model: @item do |f| %>
-				<% @items[(10..15)].each do |item| %>
-				<!-- Product #1 Starts -->
-					<div class="col-md-3 col-sm-6">
-						<div class="product-col">
-							<div class="image">
-								<img src="<%= item.image_url %>" style="
-									height: 250px;
-									width: 250px;" alt="product" class="img-responsive" />
-							</div>
-							<div class="caption">
-								<h4><a href="product.html">Antique Jewellery</a></h4>
-								<div class="description">
-									We are so lucky living in such a wonderful time. Our almost unlimited ...
-								</div>
-								<div class="price">
-									<span class="price-new">$199.50</span>
-									<span class="price-old">$249.50</span>
-								</div>
-								<div class="cart-button button-group">
-									<%= f.submit "Add to cart", class: "btn btn-cart"%>
-									<button type="button" title="Wishlist" class="btn btn-wishlist">
-										<i class="fa fa-heart"></i>
-									</button>
-									<button type="button" title="Compare" class="btn btn-compare">
-										<i class="fa fa-bar-chart-o"></i>
-									</button>
-								</div>
-							</div>
-						</div>
-					</div>
-				<%end%>
-				<% end %>
 			<!-- Product #1 Starts -->
-				<!--<div class="col-md-3 col-sm-6">
+				<div class="col-md-3 col-sm-6">
 					<div class="product-col">
 						<div class="image">
 							<img src="images/product-images/9.JPG" alt="product" class="img-responsive" />
@@ -671,10 +640,10 @@
 							</div>
 						</div>
 					</div>
-				</div>-->
+				</div>
 			<!-- Product #1 Ends -->
 			<!-- Product #2 Starts -->
-				<!--<div class="col-md-3 col-sm-6">
+				<div class="col-md-3 col-sm-6">
 					<div class="product-col">
 						<div class="image">
 							<img src="images/product-images/10.JPG" alt="product" class="img-responsive" />
@@ -702,10 +671,10 @@
 							</div>
 						</div>
 					</div>
-				</div>-->
+				</div>
 			<!-- Product #2 Ends -->
 			<!-- Product #3 Starts -->
-				<!--<div class="col-md-3 col-sm-6">
+				<div class="col-md-3 col-sm-6">
 					<div class="product-col">
 						<div class="image">
 							<img src="images/product-images/11.JPG" alt="product" class="img-responsive" />
@@ -733,10 +702,10 @@
 							</div>
 						</div>
 					</div>
-				</div>-->
+				</div>
 			<!-- Product #3 Ends -->
 			<!-- Product #4 Starts -->
-				<!--<div class="col-md-3 col-sm-6">
+				<div class="col-md-3 col-sm-6">
 					<div class="product-col">
 						<div class="image">
 							<img src="images/product-images/12.JPG" alt="product" class="img-responsive" />
@@ -764,7 +733,7 @@
 							</div>
 						</div>
 					</div>
-				</div>-->
+				</div>
 			<!-- Product #4 Ends -->
 			</div>
 		<!-- Products Row Ends -->

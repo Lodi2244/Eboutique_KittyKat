@@ -23,4 +23,4 @@ class MailerLauncher
   end
 end
 
-MailerLauncher.mailer.deliver_now!
+#MailerLauncher.mailer.deliver_now!
