@@ -70,7 +70,7 @@
 									</span>
 								</a>
 							</li>
-							<li>
+							<li>'
 								<a href="cart/show">
 									<i class="fa fa-shopping-cart" title="Shopping Cart"></i>
 									<span class="hidden-sm hidden-xs">
@@ -86,6 +86,14 @@
 									</span>
 								</a>
 							</li>
+							<% if current_user %>
+							<li>
+								<span class="hidden-sm hidden-xs">
+								  <%= link_to "Log out", destroy_user_session_path %>
+								</span>
+								</a>
+							</li>
+							<%end%>
 							<li>
 								<a href="users/sign_in">
 									<i class="fa fa-lock" title="Login"></i>

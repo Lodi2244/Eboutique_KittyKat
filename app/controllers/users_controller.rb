@@ -21,5 +21,11 @@ class UsersController < ApplicationController
        format.json { render json: @user.errors, status: :unprocessable_entity }
      end
    end
- end
+  end
+
+  def log_out
+  	@user = session[:user_id] = nil
+	flash[:info] = "Vous etes deconnecté"
+	redirect_to item
+  end
 end
