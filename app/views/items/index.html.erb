@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!doctype html>
 <html lang="en">
 <head>
@@ -884,28 +883,3 @@
 <script src="js/custom.js"></script>
 </body>
 </html>
-=======
-<h1>Catz</h1>
-<% @items.each do |cat| %>
-<img src="<%= cat.image_url %>" alt="">
-<% end %>
-
-
-<div class="payment-method">
-  <!-- Stripe -->
-  <div class="custom-control custom-checkbox mr-sm-2">
-    <form action="your-server-side-code" method="POST">
-      <script
-          src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-          data-key="<% Rails.application.credentials.stripe[:secret_key] %>"
-          data-amount="999"
-          data-name="Demo Site"
-          data-description="Example charge"
-          data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
-          data-locale="auto"
-          data-currency="eur">
-</script>
-    </form>
-  </div>
-  </div>
->>>>>>> Stripe
