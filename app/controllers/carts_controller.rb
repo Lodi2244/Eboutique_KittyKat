@@ -1,25 +1,8 @@
 class CartsController < ApplicationController
 
   def new
-    if(current_user != nil)
-  	   @cart = current_user.cart
-	elsif(current_user)
-	  @cart = Cart.new(user_id: current_user.id)
-	  if(@cart.save)
-	    flash[:info] = "Connexion done"
-	    redirect_to root_url
-	  else
-	    flash[:info] = "Error please try again"
-	    #redirect_to
-	  end
-    else
-	  flash[:info] = "Error please try again"
-	  #redirect_to
-    end
-  end
+  	@cart = current_user.cart
 
-  def cart
-    @cart = current_user.cart
   end
 
   def show
@@ -28,11 +11,21 @@ class CartsController < ApplicationController
 	  @items = Item.all
 	  @items.each do |item|
 
-	  if(item.carts.ids == @cart.id)
+	  #if(item.cart.id == @cart.id)
 	    @total_cart += item.price
 	  end
 	 end
 
+   def delete_item
+     cart_items = current_or_guest_user.cart.items
+     item = cart_items.where(id: params[:id])
+     cart_items.delete(item)
 
-  end
-end
+     @sum = cart_items.sum(:price)
+     respond_to do |f|
+       f.html {redirect_to cart_path}
+       f.js
+     end
+   end
+ end
+#end
