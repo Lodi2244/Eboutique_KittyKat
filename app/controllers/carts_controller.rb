@@ -1,5 +1,4 @@
 class CartsController < ApplicationController
-  before_action :authenticate_user!
 
   def new
     if(current_user != nil)
@@ -8,7 +7,7 @@ class CartsController < ApplicationController
 	  @cart = Cart.new(user_id: current_user.id)
 	  if(@cart.save)
 	    flash[:info] = "Connexion done"
-	    #redirect_to root_url
+	    redirect_to root_url
 	  else
 	    flash[:info] = "Error please try again"
 	    #redirect_to
@@ -19,23 +18,21 @@ class CartsController < ApplicationController
     end
   end
 
-  def create
-    @carts = Cart
+  def cart
+    @cart = current_user.cart
   end
 
   def show
-  	@cart = current_user.cart
+
     @total_cart = 0
-	  @item = Item.all
-	  @item.each do |item|
+	  @items = Item.all
+	  @items.each do |item|
 
 	  if(item.carts.ids == @cart.id)
 	    @total_cart += item.price
 	  end
 	 end
 
-    def method_name
-    end
-    
+
   end
 end

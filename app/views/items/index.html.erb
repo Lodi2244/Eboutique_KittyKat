@@ -63,7 +63,7 @@
 								</a>
 							</li>
 							<li>
-								<a href="users/show">
+								<a href="users/edit">
 									<i class="fa fa-user" title="My Account"></i>
 									<span class="hidden-sm hidden-xs">
 										My Account
@@ -71,7 +71,7 @@
 								</a>
 							</li>
 							<li>
-								<a href="/cart">
+								<a href="carts/show">
 									<i class="fa fa-shopping-cart" title="Shopping Cart"></i>
 									<span class="hidden-sm hidden-xs">
 										Shopping Cart
@@ -79,7 +79,7 @@
 								</a>
 							</li>
 							<li>
-								<a href="users/new">
+								<a href="users/sign_up">
 									<i class="fa fa-unlock" title="Register"></i>
 									<span class="hidden-sm hidden-xs">
 										Register
@@ -87,7 +87,7 @@
 								</a>
 							</li>
 							<li>
-								<a href="users/create">
+								<a href="users/sign_in">
 									<i class="fa fa-lock" title="Login"></i>
 									<span class="hidden-sm hidden-xs">
 										Login
@@ -168,7 +168,7 @@
 							<button type="button" data-toggle="dropdown" class="btn btn-block btn-lg dropdown-toggle">
 								<i class="fa fa-shopping-cart"></i>
 								<span class="hidden-md">Cart:</span>
-								<span id="cart-total">2 item(s) - $340.00</span>
+								<span id="cart-total">#{<%=  %>} Item(s)</span>
 								<i class="fa fa-caret-down"></i>
 							</button>
 							<ul class="dropdown-menu pull-right">
@@ -239,7 +239,7 @@
 										<a href="cart.html">
 											View Cart
 										</a>
-										<a href="#">
+										<a href="charges/create">
 											Checkout
 										</a>
 									</p>
@@ -398,8 +398,10 @@
 										<span class="price-old">$249.50</span>
 									</div>
 									<div class="cart-button button-group">
-											  <i class="fa fa-shopping-cart"></i>
-										  </button>
+										<button type="button" class="btn btn-cart">
+											Add to cart
+											<i class="fa fa-shopping-cart"></i>
+										</button>
 									</div>
 								</div>
 							</div>
@@ -422,7 +424,7 @@
 									</div>
 									<div class="cart-button button-group">
 										<button type="button" class="btn btn-cart">
-											Add to cart
+										 Add to cart
 											<i class="fa fa-shopping-cart"></i>
 										</button>
 									</div>
@@ -609,7 +611,6 @@
 		<!-- Heading Ends -->
 		<!-- Products Row Starts -->
 			<div class="row">
-				<%= form_with model: @item do |f| %>
 				<% @items[(10..15)].each do |item| %>
 				<!-- Product #1 Starts -->
 					<div class="col-md-3 col-sm-6">
@@ -629,7 +630,7 @@
 									<span class="price-old">$249.50</span>
 								</div>
 								<div class="cart-button button-group">
-									<%= f.submit "Add to cart", class: "btn btn-cart"%>
+							<%= link_to "ADD TO CART", add_to_cart_path, remote: true, data: {params: {id: item.id}.to_param}, class: "btn btn-cart" %>
 									<button type="button" title="Wishlist" class="btn btn-wishlist">
 										<i class="fa fa-heart"></i>
 									</button>
@@ -640,8 +641,7 @@
 							</div>
 						</div>
 					</div>
-				<%end%>
-				<% end %>
+				 <%end%>
 			<!-- Product #1 Starts -->
 				<!--<div class="col-md-3 col-sm-6">
 					<div class="product-col">
