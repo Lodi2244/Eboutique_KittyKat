@@ -11,6 +11,7 @@ Clone this repo
 bundle install
 rails db:create
 rails db:migrate
+rails db:seed
 rails server
 ```
 Production link : https://kittykat-prod.herokuapp.com
