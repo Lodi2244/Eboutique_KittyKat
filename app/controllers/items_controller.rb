@@ -1,5 +1,5 @@
 class ItemsController < ApplicationController
-  #before_action :authenticate_user!
+
   def index
     @items = Item.all
   end
@@ -11,24 +11,24 @@ class ItemsController < ApplicationController
 
   def add_to_cart
     @item = Item.find(params[:id])
-
-    if current_user.nil?
+      if current_user.nil?
+	       print("ok \n")
       flash[:alert] = "You must log in to add an item to your cart"
       redirect_to item_path(params[:id])
-    else
-      current_user.cart.items << @item
-      flash[:success] = 'Item successfully added to cart!'
-      redirect_to item_path(params[:id])
+      else
+	       print("\n\n\n\n\n>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> #{params[:id]} \n")
+     current_user.cart.items << @item
+     flash[:success] = 'Item successfully added to cart!'
+     redirect_to item_path(params[:id])
     end
   end
 
   def total_price
     @total_cart = 0
-	  @items = Item.all
-	  @items.each do |item|
-	     if(item.carts.ids == @cart.id)
-	        @total_cart += item.price
-	     end
-	    end
-    end
+  end
+
+  private
+  def item_params
+    params.require(:items).permit(:id)
+  end
 end
