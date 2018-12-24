@@ -1,41 +1,31 @@
 class CartsController < ApplicationController
-  before_action :authenticate_user!
 
   def new
-  	if(current_user != nil)
-  	   @cart = Cart.find((User.find(current_user.id)).cart.id)
-	  elsif(current_user)
-	     @cart = Cart.new(user_id: current_user.id)
-	  if(@cart.save)
-	    flash[:info] = "Connexion done"
-	    #redirect_to root_url
-	  else
-	    flash[:info] = "Error please try again"
-	    #redirect_to
-    end
-    else
-	  flash[:info] = "Error please try again"
-	  #redirect_to
-  end
-end
+  	@cart = current_user.cart
 
-  def create
-    @carts = Cart
   end
 
   def show
-  	@cart = current_user.cart
-    @total_cart = 0
-	  @item = Item.all
-	  @item.each do |item|
 
-	  if(item.carts.ids == @cart.id)
+    @total_cart = 0
+	  @items = Item.all
+	  @items.each do |item|
+
+	  #if(item.cart.id == @cart.id)
 	    @total_cart += item.price
 	  end
 	 end
 
-    def method_name
-    end
-    
-  end
-end
+   def delete_item
+     cart_items = current_or_guest_user.cart.items
+     item = cart_items.where(id: params[:id])
+     cart_items.delete(item)
+
+     @sum = cart_items.sum(:price)
+     respond_to do |f|
+       f.html {redirect_to cart_path}
+       f.js
+     end
+   end
+ end
+#end

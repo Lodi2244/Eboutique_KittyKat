@@ -29,6 +29,6 @@ end
 
 p "DONE !"
 
-#User.all.destroy
-#p "Create Test User"
-#user = User.create(email: "RoxyFoxy2244@gmail.com")
+User.destroy_all
+p "Create Test User"
+user = User.create(email: "RoxyFoxy2244@gmail.com", password: "Xxxxxxx", password_confirmation: "Xxxxxxx")

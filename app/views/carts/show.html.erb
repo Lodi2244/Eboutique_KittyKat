@@ -1,4 +1,3 @@
-<%= @price %>
 
 <!doctype html>
 <html lang="en">
@@ -314,7 +313,8 @@
 							</a>
 						</td>
 						<td class="text-center">
-							<a href="product-full.html">Antique Jewellery</a>
+							<%= @items.each do |item| %>
+							<a href="<%= item.image_url %>"> Kitten <%= item.id %></a>
 						</td>
 						<td class="text-center">
 							<div class="input-group btn-block">
@@ -322,11 +322,12 @@
 							</div>
 						</td>
 						<td class="text-center">
-							$150.00
+							<%= item.price %>
 						</td>
 						<td class="text-center">
-							$150.00
+							<%= item.price %>
 						</td>
+
 						<td class="text-center">
 							<button type="submit" title="Update" class="btn btn-default tool-tip">
 								<i class="fa fa-refresh"></i>
@@ -339,11 +340,11 @@
 					<tr>
 						<td class="text-center">
 							<a href="product.html">
-								<img src="images/product-images/cart-thumb-img2.jpg" alt="Product Name" title="Product Name" class="img-thumbnail" />
+								<img src="<%= item.image_url %>" alt="Product Name" title="Product Name" class="img-thumbnail" />
 							</a>
 						</td>
 						<td class="text-center">
-							<a href="product-full.html">Antique Jewellery</a>
+							<a href="product-full.html">Kitten <%= item.id %></a>
 						</td>
 						<td class="text-center">
 							<div class="input-group btn-block">
@@ -351,18 +352,19 @@
 							</div>
 						</td>
 						<td class="text-center">
-							$150.00
+							<%= item.price %>
 						</td>
 						<td class="text-center">
-							$150.00
+							<%= item.price %>
 						</td>
 						<td class="text-center">
-							<button type="submit" title="Update" class="btn btn-default tool-tip">
-								<i class="fa fa-refresh"></i>
-							</button>
+							<% end %>
+							<% @items.each  do |item| %>
+							<%= link_to "", item.delete, method: 'put', class: "btn btn-default tool-tip" %>
 							<button type="button" title="Remove" class="btn btn-default tool-tip">
 								<i class="fa fa-times-circle"></i>
 							</button>
+							<% end %>
 						</td>
 					</tr>
 				</tbody>
@@ -372,7 +374,7 @@
 						<strong>Total :</strong>
 					  </td>
 					  <td colspan="2" class="text-left">
-						$300
+						<%= @items.sum(:price) %>
 					  </td>
 					</tr>
 				</tfoot>
@@ -586,7 +588,7 @@
 								<dt>Coupon Discount :</dt>
 								<dd>$-25.00</dd>
 								<dt>Subtotal :</dt>
-								<dd>$300.00</dd>
+								<dd><%= @items.sum(:price) - 25 %></dd>
 								<dt>Payment Fee :</dt>
 								<dd>$10.00</dd>
 								<dt>Shipment Fee :</dt>
@@ -597,17 +599,16 @@
 							<hr />
 							<dl class="dl-horizontal total">
 								<dt>Total :</dt>
-								<dd>$325.00</dd>
+								<dd><%= @items.sum(:price) %></dd>
 							</dl>
 							<hr />
 							<div class="text-uppercase clearfix">
-								<a href="#" class="btn btn-default pull-left">
+								<a href="items/index" class="btn btn-default pull-left">
 									<span class="hidden-xs">Continue Shopping</span>
 									<span class="visible-xs">Continue</span>
 								</a>
-								<a href="#" class="btn btn-main pull-right">
-									Checkout
-								</a>
+								<a href="charges/new">
+								<button class="btn btn-main pull-right">Place Order</button></a>
 							</div>
 						</div>
 					</div>

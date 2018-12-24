@@ -1,24 +1,21 @@
-# README
+## Eboutique KittyKat
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This Rails App is a eshop for cats by Team Ponctuals 2.0 :
+  - Mallone => @-M-
+  - Arthur => @Arthur.S
+  - Elodie => @tite_Lodi
 
-Things you may want to cover:
+## Config
+Clone this repo
+```
+bundle install
+rails db:create
+rails db:migrate
+rails db:seed
+rails server
+```
+Production link : https://kittykat-prod.herokuapp.com
 
-* Ruby version
+Enjoy !
 
-* System dependencies
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
