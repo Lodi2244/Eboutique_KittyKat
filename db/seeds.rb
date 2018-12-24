@@ -31,4 +31,8 @@ p "DONE !"
 
 User.destroy_all
 p "Create Test User"
-user = User.create(email: "RoxyFoxy2244@gmail.com", password: "Xxxxxxx", password_confirmation: "Xxxxxxx")
+user = User.create(email: "elodie@elodie.com", password: "Xxxxxxx", password_confirmation: "Xxxxxxx")
+
+p "Create 3 categories"
+
+Category.create!([{name: "Cute Kittens"}, {name: "Funky Katz"}, {name: "Sleepy Kitty"}])

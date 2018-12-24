@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'categories/index'
+  get 'categories/update'
   resources :charges, only: [:create, :new]
   resources :items, only: [:index, :show]
   resource :cart, only: [:show]
